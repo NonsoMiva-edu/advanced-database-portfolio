@@ -1,2 +1,77 @@
+NovaBank: Advanced Database Systems Portfolio
 
-# Nova Bank – Advanced Database Systems Portfolio
+Course: MIT 8103: Advanced Database Systems
+Programme: Master of Information Technology (MIT)
+Academic Session: 2026/2027
+Assessment: First Semester Continuous Assessment
+
+Project Overview
+
+NovaBank is a simulated digital banking system created as part of the MIT 8103 Advanced Database Systems course.
+
+The system will manage banking customers, accounts, transfers, and other financial activities. I chose a banking system as the domain for this project due to the need for banking systems to maintain accurate and secure data. For example, if a customer transfers ₦50,000 from their account to another customer’s account, the database must successfully complete that transfer. If the transfer cannot be completed, then the transaction must be undone (rolled back) to ensure that the customer’s money is not transferred to an account that they did not authorize.
+
+There are five main areas of the database system covered in this portfolio.
+
+Portfolio Activities
+Database Design and Modelling
+
+Design a PostgreSQL database for NovaBank with customers, accounts, transfers, and more. All tables must use appropriate primary and foreign keys, as well as being normalized up to Third Normal Form (3NF).
+Query Processing and Optimisation
+
+Use PostgreSQL to write queries that retrieve data from the NovaBank database, and analyze the performance of those queries using the EXPLAIN ANALYZE tool. Compare performance with and without indexing on the tables.
+Transactions and Concurrency
+
+Execute banking transactions while upholding the ACID properties of banking databases. Test the transactional features of PostgreSQL to ensure that transactions can be committed or rolled back, isolated from other transactions, and allow concurrent updates to accounts.
+NoSQL and Advanced Data Models
+
+Use MongoDB to store transaction activity records for NovaBank. Create sample NoSQL documents for transactions, and execute queries on those documents. Explain the situations where NoSQL databases are appropriate for banking systems.
+Distributed and Cloud Databases
+
+Set up a PostgreSQL database with a primary and replica instances in Docker. Examine the characteristics of distributed databases, including replication and availability.
+
+Technologies
+PostgreSQL: Relational database management system
+MongoDB: NoSQL database system
+Docker: Database containerization tool
+SQL: Query language for relational databases
+DBeaver/pgAdmin: Database management tools
+GitHub: Code repository
+
+Repository Structure
+
+`text
+novabank-advanced-database/
+├── portfolio-1-database-design/
+├── portfolio-2-query-optimisation/
+├── portfolio-3-transactions-concurrency/
+├── portfolio-4-nosql/
+├── portfolio-5-distributed-cloud/
+├── evidence/
+├── docs/
+└── README.md
+`
+
+Getting Started
+
+Create the PostgreSQL database using the following command:
+
+`sql
+CREATE DATABASE novabank;
+`
+
+Connect to the database and run the SQL scripts in the portfolio-1-database-design/ folder.
+
+Each of the other folders in this repository will contain the files for each of the portfolio activities.
+
+Documentation and AI Use
+
+The final project report will contain documentation of the implementation of the NovaBank database systems, as well as the challenges faced during the project.
+
+AI tools will be used during the course of the project to help plan the database, explain technical concepts, debug any issues in the code, or to document the project. All implementations submitted as part of this portfolio will be independently verified by the student.
+
+Project Status
+
+In Progress: Database Design and Modelling.
+
+All other activities will be completed as the implementation progresses.
