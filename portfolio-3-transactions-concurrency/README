@@ -1,0 +1,3 @@
+# Portfolio 3: Transactions and Concurrency
+
+NovaBank PostgreSQL transaction tests demonstrate COMMIT, ROLLBACK, READ COMMITTED isolation and row-level locking. Two independent database sessions were used to verify transaction visibility and concurrent update control. SQL scripts and screenshots provide evidence of committed changes, rollback recovery, lock timeout and successful updates after lock release.
